@@ -1,4 +1,5 @@
-import Alert from "./components/Alert";
+// import Alert from "./components/Alert";
+import Button from "./components/Button";
 // import ListGroup from "./components/ListGroup";
 
 function App() {
@@ -16,10 +17,16 @@ function App() {
                 heading="Fruits"
                 onSelectItem={handleSelectItem}
             /> */}
-            <Alert>
-                {/* Hello */}
+            {/* <Alert>
                 <h1>World</h1>
-            </Alert>
+            </Alert> */}
+            <Button text="Click me!" />
+            <Button text="Click me!" />
+            <Button text="Click me!" />
+            <Button text="Click me!" />
+            <Button text="Click me!" />
+            <Button text="Click me!" />
+            <Button text="Click me!" />
         </div>
     );
 }
