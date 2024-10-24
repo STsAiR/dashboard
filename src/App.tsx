@@ -1,10 +1,11 @@
 import Alert from "./components/Alert";
+import CurrentTime from "./components/CurrentTime";
 // import Button from "./components/Button";
 // import ListGroup from "./components/ListGroup";
 
 function App() {
     // set background as black
-    document.body.style.backgroundColor = "black";
+    document.body.style.backgroundColor = "grey";
     // let items = ["apple", "banana", "cherry", "date", "elderberry"];
     // const handleSelectItem = (item: string) => console.log(item);
 
@@ -25,6 +26,7 @@ function App() {
             {/* <Button color="warning" onClick={() => console.log("clicked")}>
                 Button
             </Button> */}
+            <CurrentTime />
         </div>
     );
 }
