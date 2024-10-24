@@ -1,10 +1,30 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
+import Button from "./Button";
 
 interface props {
-    children: ReactNode;
+    children?: ReactNode;
 }
 
 const Alert = ({ children }: props) => {
+    const [show, setShow] = useState(false);
+
+    if (show) {
+        return (
+            <div className="alert alert-primary">
+                {children}
+                <Button color="primary" onClick={() => setShow(false)}>
+                    Hide Alert
+                </Button>
+            </div>
+        );
+    } else {
+        return (
+            <Button color="primary" onClick={() => setShow(true)}>
+                Show Alert
+            </Button>
+        );
+    }
+
     return <div className="alert alert-primary">{children}</div>;
 };
 
