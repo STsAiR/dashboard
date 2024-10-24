@@ -1,19 +1,23 @@
 // import React from 'react'
 
+import React, { useState } from "react";
+
 interface ButtonProps {
     text: string;
 }
 
 const Button = ({ text }: ButtonProps) => {
+    const [content, setContent] = useState<string>(text);
+
     return (
         <button
             type="button"
             className="btn btn-primary"
             onClick={(e) => {
-                console.log(e.clientX, e.clientY);
+                setContent(e.clientX.toString() + " " + e.clientY.toString());
             }}
         >
-            {text}
+            {content}
         </button>
     );
 };
