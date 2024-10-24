@@ -10,16 +10,16 @@ const Alert = ({ children }: props) => {
 
     if (show) {
         return (
-            <div className="alert alert-primary">
+            <div className="alert alert-danger">
                 {children}
-                <Button color="primary" onClick={() => setShow(false)}>
+                <Button color="danger" onClick={() => setShow(false)}>
                     Hide Alert
                 </Button>
             </div>
         );
     } else {
         return (
-            <Button color="primary" onClick={() => setShow(true)}>
+            <Button color="danger" onClick={() => setShow(true)}>
                 Show Alert
             </Button>
         );

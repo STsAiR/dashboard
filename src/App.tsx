@@ -3,6 +3,8 @@ import Alert from "./components/Alert";
 // import ListGroup from "./components/ListGroup";
 
 function App() {
+    // set background as black
+    document.body.style.backgroundColor = "black";
     // let items = ["apple", "banana", "cherry", "date", "elderberry"];
     // const handleSelectItem = (item: string) => console.log(item);
 
@@ -18,7 +20,7 @@ function App() {
                 onSelectItem={handleSelectItem}
             /> */}
             <Alert>
-                <h1>This is an alert!</h1>
+                <h1>唔好Emo啦！</h1>
             </Alert>
             {/* <Button color="warning" onClick={() => console.log("clicked")}>
                 Button
