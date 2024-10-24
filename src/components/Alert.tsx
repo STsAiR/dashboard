@@ -1,5 +1,6 @@
 import { ReactNode, useState } from "react";
 import Button from "./Button";
+import TimeDiff from "./TimeDiff";
 
 interface props {
     children?: ReactNode;
@@ -15,6 +16,7 @@ const Alert = ({ children }: props) => {
                 <Button color="danger" onClick={() => setShow(false)}>
                     Hide Alert
                 </Button>
+                <TimeDiff />
             </div>
         );
     } else {
